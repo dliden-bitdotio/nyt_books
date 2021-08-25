@@ -78,7 +78,6 @@ if __name__ == "__main__":
         [lists_transformed, fic_transformed, nonfic_transformed],
     ):
         fully_qualified = f'{os.getenv("BITIO_USERNAME")}/{schema_name}.{name}'
-        # breakpoint()
         load.to_table(
             df=data,
             destination=fully_qualified,

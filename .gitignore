@@ -134,3 +134,6 @@ dmypy.json
 
 # emacs stuff
 .ob-jupyter/
+
+# draft
+*.org
