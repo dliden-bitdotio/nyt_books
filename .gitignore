@@ -75,7 +75,10 @@ docs/_build/
 target/
 
 # Jupyter Notebook
+<<<<<<< HEAD
 notebooks/
+=======
+>>>>>>> f75510da7b40f2be9d50154752dfcf9483ed3384
 .ipynb_checkpoints
 
 # IPython
