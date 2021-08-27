@@ -41,7 +41,7 @@ def create_new_schema(
             api_instance.create_repo(repo=repo)
 
 
-def _psql_insert_copy(table, conn, keys, data_iter):
+def _psql_insert_copy(table: pandas.io.sql.SQLTable, conn, keys, data_iter):
     """DataFrame.to_sql Insertion method using PostgreSQL COPY FROM.
     Adapted for bit.io from pandas docs: https://pandas.pydata.org/docs/
     Source: https://github.com/bitdotioinc/simple-pipeline/blob/main/simple_pipeline/load.py
