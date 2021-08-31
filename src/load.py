@@ -8,6 +8,7 @@
 
 import bitdotio
 import csv
+import pandas
 import sqlalchemy
 
 from io import StringIO
