@@ -1,3 +1,5 @@
+![](https://developer.nytimes.com/files/poweredby_nytimes_200a.png?v=1583354208344)
+
 # bit.io New York Times Books Pipeline
 A simple bit.io ETL pipeline for getting data from the New York Times Books API into a Postgres Database on bit.io.
 
