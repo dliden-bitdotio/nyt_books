@@ -6,9 +6,6 @@
     Python Version: 3.9
 """
 
-import json
-import os
-import pandas as pd
 import requests
 
 
