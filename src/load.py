@@ -21,7 +21,9 @@ def create_new_schema(
 
     Parameters
     ----------
-    engine : sqlalchemy.engine.Engine
+    pg_string
+    bitio_key
+    bitio_username
     schema_name : str
         The schema to check for and/or create.
 

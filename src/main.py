@@ -74,8 +74,8 @@ if __name__ == "__main__":
 
     ## Load to bit.io, replacing existing tables
     for (name, data) in zip(
-        [list_of_lists_name, fiction_name, nonfiction_name],
-        [lists_transformed, fic_transformed, nonfic_transformed],
+            [list_of_lists_name, fiction_name, nonfiction_name],
+            [lists_transformed, fic_transformed, nonfic_transformed],
     ):
         fully_qualified = f'{os.getenv("BITIO_USERNAME")}/{schema_name}.{name}'
         load.to_table(

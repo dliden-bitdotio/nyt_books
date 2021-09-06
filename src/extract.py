@@ -1,10 +1,10 @@
-'''
+"""
     File name: main.py
     Author: Daniel Liden
     Date created: 2021-08-19
     Date last modified: 2021-08-19
     Python Version: 3.9
-'''
+"""
 
 import json
 import os
@@ -12,7 +12,7 @@ import pandas as pd
 import requests
 
 
-def json_from_get_request(url:str, params:dict=None) -> dict:
+def json_from_get_request(url: str, params: dict = None) -> dict:
     """obtains JSON-formatted data accessible with a GET request
 
     Parameters
@@ -27,6 +27,3 @@ def json_from_get_request(url:str, params:dict=None) -> dict:
     """
     r = requests.get(url=url, params=params, timeout=60000)
     return r.json()
-    
-
-

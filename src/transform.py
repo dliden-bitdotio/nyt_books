@@ -11,15 +11,19 @@ import numpy as np
 
 from datetime import datetime
 
+
 def transform_list_of_booklists(lists_dict: dict):
     lists = pd.DataFrame(lists_dict["results"])
     lists.loc[:, ["oldest_published_date", "newest_published_date"]] = lists.loc[
-        :, ["oldest_published_date", "newest_published_date"]
-    ].applymap(lambda x: datetime.strptime(x, "%Y-%m-%d").date())
+                                                                       :, ["oldest_published_date",
+                                                                           "newest_published_date"]
+                                                                       ].applymap(
+        lambda x: datetime.strptime(x, "%Y-%m-%d").date())
 
     return lists
 
-def _get_links(col: str, name: str) -> dict:
+
+def _get_links(col: str, name: str) -> str:
     """returns specified links from buy_links by name"""
     return [d for d in col if d["name"] == name][0]["url"]
 

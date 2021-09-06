@@ -137,3 +137,6 @@ dmypy.json
 
 # draft
 *.org
+
+# pycharm stuff
+.idea/
